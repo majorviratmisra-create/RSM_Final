@@ -1,0 +1,11 @@
+export { default as Header } from './Header';
+export { default as Hero } from './Hero';
+export { default as About } from './About';
+export { default as Vision } from './Vision';
+export { default as Mission } from './Mission';
+export { default as Values } from './Values';
+export { default as WhyWeExist } from './WhyWeExist';
+export { default as PresidentMessage } from './PresidentMessage';
+export { default as Team } from './Team';
+export { default as GetInvolved } from './GetInvolved';
+export { default as Footer } from './Footer';

@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RSM (राष्ट्रमा) - Nation Building Platform
+
+A modern, responsive website for RSM (राष्ट्रमा) - a nation-building social service platform inspired by Netaji Subhas Chandra Bose.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **Font**: Playfair Display (headings) + Source Sans 3 (body)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20.9.0 or higher (use `nvm use` to automatically select the correct version)
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles, CSS variables, animations
+│   ├── layout.tsx       # Root layout with metadata
+│   └── page.tsx         # Main page component
+├── components/
+│   ├── Header.tsx       # Navigation with language toggle
+│   ├── Hero.tsx         # Hero section with CTA
+│   ├── About.tsx        # About RSM section
+│   ├── Vision.tsx       # Vision section
+│   ├── Mission.tsx      # Mission pillars cards
+│   ├── Values.tsx       # What We Stand For section
+│   ├── WhyWeExist.tsx   # Purpose section
+│   ├── PresidentMessage.tsx  # President's message
+│   ├── Team.tsx         # Team section placeholder
+│   ├── GetInvolved.tsx  # Contact form
+│   ├── Footer.tsx       # Footer with links
+│   └── index.ts         # Component exports
+```
 
-## Learn More
+## Sections
 
-To learn more about Next.js, take a look at the following resources:
+1. **Header** - Sticky navigation with logo, menu items, language toggle (EN/हिंदी), and CTA button
+2. **Hero** - Full-height banner with main messaging and call-to-action
+3. **About** - Introduction to RSM and its mission
+4. **Vision** - Blueprint for national resurrection
+5. **Mission** - 5 pillars of action (card-based layout)
+6. **Values** - Core values with highlighted "Action Over Words"
+7. **Why We Exist** - Purpose and call to action
+8. **President's Message** - Quote from the founder
+9. **Team** - Placeholder for team information
+10. **Get Involved** - Contact form for volunteers
+11. **Footer** - Links and social media
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment to Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is optimized for deployment on Vercel:
 
-## Deploy on Vercel
+1. Push your code to GitHub
+2. Import the project in Vercel
+3. Vercel will automatically detect Next.js and deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Or use the Vercel CLI:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm i -g vercel
+vercel
+```
+
+## Customization
+
+### Colors
+
+Edit CSS variables in `src/app/globals.css`:
+
+```css
+:root {
+  --primary: #E85D04;        /* Saffron/Orange */
+  --secondary: #1A2332;      /* Navy Dark */
+  --background: #FFFBF7;     /* Off-white */
+}
+```
+
+### Content
+
+All content is currently hardcoded in the components. To update:
+
+1. Edit text directly in component files
+2. Replace `[CLIENT NAME]` in `PresidentMessage.tsx` with actual name
+3. Add actual social media links in `Footer.tsx`
+
+## License
+
+All Rights Reserved © RSM (राष्ट्रमा)

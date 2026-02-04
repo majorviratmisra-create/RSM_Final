@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto">
           {/* Main Heading - Smooth responsive scaling */}
           <h1 
-            className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-[var(--foreground)] mb-4 sm:mb-5 md:mb-6 animate-fade-in-up opacity-0 leading-tight" 
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold text-[var(--foreground)] mb-4 sm:mb-5 md:mb-6 animate-fade-in-up opacity-0 leading-tight" 
             style={{ fontFamily: "var(--font-heading)" }}
           >
             India&apos;s Future Begins With Its{" "}

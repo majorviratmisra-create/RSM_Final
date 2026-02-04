@@ -100,7 +100,7 @@ export default function Header() {
               </button>
 
               {/* CTA Button */}
-              <Link href="#get-involved" className="btn-primary">
+              <Link href="#get-involved" className="btn-primary text-sm px-2 py-2">
                 Join the Movement
               </Link>
             </div>

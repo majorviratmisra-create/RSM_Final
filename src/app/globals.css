@@ -52,6 +52,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
@@ -138,6 +139,44 @@ h1, h2, h3, h4, h5, h6 {
   50% {
     box-shadow: 0 0 20px 10px rgba(232, 93, 4, 0);
   }
+}
+
+@keyframes text-shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@layer components {
+
+.shining-banner {
+  box-shadow:
+    0 12px 40px rgba(232, 93, 4, 0.35),
+    0 0 30px rgba(255, 180, 80, 0.35);
+}
+
+.shining-headline {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  background-image: linear-gradient(
+    110deg,
+    #fff6e8 0%,
+    #ffffff 18%,
+    #ffe0a8 36%,
+    #ffffff 54%,
+    #fff6e8 72%,
+    #ffffff 100%
+  );
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: text-shine 2.8s linear infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.55));
 }
 
 .animate-fade-in-up {
@@ -262,7 +301,6 @@ h1, h2, h3, h4, h5, h6 {
 .card {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
@@ -317,34 +355,34 @@ h1, h2, h3, h4, h5, h6 {
 .container-custom {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding-inline: 1rem;
 }
 
 /* Small tablets (600px+) */
 @media (min-width: 600px) {
   .container-custom {
-    padding: 0 1.25rem;
+    padding-inline: 1.25rem;
   }
 }
 
 /* Medium (640px+) */
 @media (min-width: 640px) {
   .container-custom {
-    padding: 0 1.5rem;
+    padding-inline: 1.5rem;
   }
 }
 
 /* Large tablets (1024px+) */
 @media (min-width: 1024px) {
   .container-custom {
-    padding: 0 2rem;
+    padding-inline: 2rem;
   }
 }
 
 /* Desktop (1280px+) */
 @media (min-width: 1280px) {
   .container-custom {
-    padding: 0 2rem;
+    padding-inline: 2rem;
     max-width: 1280px;
   }
 }
@@ -417,6 +455,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 4px;
   background: var(--primary);
   border-radius: 2px;
+}
+
 }
 
 /* Selection */

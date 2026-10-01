@@ -5,9 +5,11 @@ import Link from "next/link";
 
 const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#vision", label: "Our Vision" },
-  { href: "#work", label: "Our Work" },
-  { href: "#get-involved", label: "Get Involved" },
+  { href: "#why-youth", label: "Why Youth" },
+  { href: "#vision", label: "Vision" },
+  { href: "#priorities", label: "Priorities" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#get-involved", label: "Join" },
 ];
 
 export default function Header() {
@@ -57,8 +59,13 @@ export default function Header() {
                 <div className="w-[5px] h-8 bg-[var(--primary)] rounded-sm transform -skew-x-12"></div>
                 <div className="w-[5px] h-8 bg-[var(--primary)] rounded-sm transform -skew-x-12"></div>
               </div>
-              <span className="text-xl font-bold text-[var(--foreground)] font-[var(--font-heading)]">
-                RSM <span className="text-[var(--primary)]">(राष्ट्रमा)</span>
+              <span className="flex flex-col leading-tight">
+                <span className="text-xl font-bold text-[var(--foreground)]" style={{ fontFamily: "var(--font-heading)" }}>
+                  Rashtrama
+                </span>
+                <span className="text-[11px] font-semibold tracking-wide text-[var(--primary)]">
+                  RSM (राष्ट्रमा)
+                </span>
               </span>
             </Link>
 
@@ -69,7 +76,7 @@ export default function Header() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-[var(--foreground)] hover:text-[var(--primary)] transition-colors font-medium relative group"
+                      className="text-[var(--foreground)] hover:text-[var(--primary)] transition-colors font-medium relative group whitespace-nowrap"
                     >
                       {link.label}
                       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--primary)] transition-all group-hover:w-full"></span>
@@ -100,7 +107,7 @@ export default function Header() {
               </button>
 
               {/* CTA Button */}
-              <Link href="#get-involved" className="btn-primary text-sm px-2 py-2">
+              <Link href="#get-involved" className="btn-primary text-sm px-4 py-2">
                 Join the Movement
               </Link>
             </div>

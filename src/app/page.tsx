@@ -3,11 +3,11 @@ import {
   Hero,
   About,
   Vision,
-  Mission,
-  Values,
-  WhyWeExist,
-  PresidentMessage,
-  Team,
+  Priorities,
+  Professionals,
+  Founder,
+  Impact,
+  PhotoGallery,
   GetInvolved,
   Footer,
 } from "@/components";
@@ -19,16 +19,13 @@ export default function Home() {
       <Hero />
       <About />
       <Vision />
-      <Mission />
-      <Values />
-      <WhyWeExist />
-      <PresidentMessage />
-      <Team />
-      {/* Get Involved + Footer combined in one full-screen section */}
-      <div className="min-h-screen flex flex-col">
-        <GetInvolved />
-        <Footer />
-      </div>
+      <Priorities />
+      <Professionals />
+      <Founder />
+      <Impact />
+      <PhotoGallery />
+      <GetInvolved />
+      <Footer />
     </main>
   );
 }

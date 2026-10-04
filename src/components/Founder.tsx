@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const credentials = [
   "Former Infantry officer, Indian Army",
-  "Former Civil Servant (IRTS, UPSC - 2017 batch)",
+  "Former Civil Servant (IRS, UPSC batch TBD)",
   "Mentor & Nation Builder (IIT Kanpur)",
 ];
 
@@ -29,7 +29,7 @@ export default function Founder() {
                 <div className="relative w-full max-w-md mx-auto md:mx-0 md:w-80 aspect-[3/2] overflow-hidden rounded-xl shadow-lg border border-[var(--border-light)]">
                   <Image
                     src="/founder-major-virat-mishra.png"
-                    alt="Major Virat Misra speaking at Ideas Matter Most Talks"
+                    alt="Major Virat Mishra speaking at Ideas Matter Most Talks"
                     fill
                     sizes="(max-width: 767px) calc(100vw - 4rem), 320px"
                     className="object-contain"

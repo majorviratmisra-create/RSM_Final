@@ -13,15 +13,8 @@ export default function Impact() {
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="text-[var(--primary)] font-semibold uppercase tracking-wider text-xs sm:text-sm">
+            <h2 className="text-[var(--primary)] font-semibold uppercase tracking-wider text-xs sm:text-sm">
               Our Impact
-            </span>
-            <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-[var(--foreground)] mt-3 sm:mt-4 leading-tight"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              What Rashtrama{" "}
-              <span className="text-[var(--primary)]">Has Done</span>
             </h2>
           </div>
 

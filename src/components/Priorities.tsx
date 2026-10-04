@@ -29,8 +29,7 @@ const priorities = [
     ),
   },
   {
-    title: "Education Enablement",
-    badge: "AI",
+    title: "Education and AI Enablement",
     points: [],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,15 +83,8 @@ export default function Priorities() {
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="text-[var(--primary)] font-semibold uppercase tracking-wider text-xs sm:text-sm">
-              Our Priorities
-            </span>
-            <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-[var(--foreground)] mt-3 sm:mt-4 leading-tight"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              What Rashtrama{" "}
-              <span className="text-[var(--primary)]">Will Focus On</span>
+            <h2 className="text-[var(--primary)] font-semibold uppercase tracking-wider text-xs sm:text-sm">
+              Priorities
             </h2>
           </div>
 
@@ -102,15 +94,10 @@ export default function Priorities() {
                 key={priority.title}
                 className="card group hover:border-[var(--primary)] border-2 border-transparent p-5 sm:p-6"
               >
-                <div className="flex items-start justify-between gap-3 mb-4">
+                <div className="mb-4">
                   <div className="w-12 h-12 rounded-lg bg-[var(--accent-orange-light)] flex items-center justify-center text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-white transition-all duration-300">
                     {priority.icon}
                   </div>
-                  {priority.badge && (
-                    <span className="text-xs font-bold uppercase tracking-wide px-2 py-1 rounded-full bg-[var(--primary)] text-white">
-                      {priority.badge}
-                    </span>
-                  )}
                 </div>
                 <h3
                   className={`text-lg font-bold text-[var(--foreground)] ${priority.points.length ? "mb-3" : ""}`}

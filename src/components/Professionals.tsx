@@ -58,19 +58,13 @@ export default function Professionals() {
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <span className="text-[var(--primary)] font-semibold uppercase tracking-wider text-xs sm:text-sm">
-              Who We Are Building With
-            </span>
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-[var(--foreground)] mt-3 sm:mt-4 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-[var(--foreground)] leading-tight"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               Netaji Bose{" "}
               <span className="text-[var(--primary)]">Young Professionals Network</span>
             </h2>
-            <p className="mt-4 sm:mt-5 text-base sm:text-lg text-[var(--text-muted)] max-w-3xl mx-auto leading-relaxed">
-              Rashtrama builds from students into young professionals — and from there into youth leadership.
-            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">

@@ -46,6 +46,26 @@ const socialChannels = [
       </svg>
     ),
   },
+  {
+    name: "Telegram",
+    href: "#",
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 3 3 10.5l6.4 2.2L18 6l-6.7 8 6.1 4.1L21 3Z" />
+        <path d="M9.4 12.7 10 20l2.7-4.7" />
+      </svg>
+    ),
+  },
+  {
+    name: "WhatsApp",
+    href: "#",
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20.5l1.4-5.1A8.5 8.5 0 1 1 20.5 11.5Z" />
+        <path d="M8.5 8.2c.2-.3.5-.4.8-.3l1 .5c.3.1.4.4.3.7l-.4 1c.7 1.2 1.6 2.1 2.8 2.8l1-.4c.3-.1.6 0 .7.3l.5 1c.1.3 0 .6-.3.8-.7.6-1.5.7-2.3.4a9 9 0 0 1-5.4-5.4c-.3-.8-.2-1.6.3-2.3Z" />
+      </svg>
+    ),
+  },
 ];
 
 function FieldLabel({
@@ -357,7 +377,7 @@ export default function GetInvolved() {
           </div>
 
           <div id="social">
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
               {socialChannels.map((channel) => (
                 <a
                   key={channel.name}

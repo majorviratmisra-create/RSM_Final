@@ -3,9 +3,8 @@
 import Image from "next/image";
 
 const credentials = [
-  "Founder & National President, Rashtrama",
   "Former Infantry officer, Indian Army",
-  "Former Civil Servant (IRS, UPSC batch TBD)",
+  "Former Civil Servant (IRTS, UPSC - 2017 batch)",
   "Mentor & Nation Builder (IIT Kanpur)",
 ];
 
@@ -15,11 +14,8 @@ export default function Founder() {
       <div className="container-custom">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-10">
-            <span className="text-[var(--primary)] font-semibold uppercase tracking-wider text-xs sm:text-sm">
-              Who Is Behind Rashtrama
-            </span>
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-[var(--foreground)] mt-3 sm:mt-4 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-5xl font-bold text-[var(--foreground)] leading-tight"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               Founder &amp;{" "}
@@ -33,7 +29,7 @@ export default function Founder() {
                 <div className="relative w-full max-w-md mx-auto md:mx-0 md:w-80 aspect-[3/2] overflow-hidden rounded-xl shadow-lg border border-[var(--border-light)]">
                   <Image
                     src="/founder-major-virat-mishra.png"
-                    alt="Major Virat Mishra speaking at Ideas Matter Most Talks"
+                    alt="Major Virat Misra speaking at Ideas Matter Most Talks"
                     fill
                     sizes="(max-width: 767px) calc(100vw - 4rem), 320px"
                     className="object-contain"
@@ -50,7 +46,7 @@ export default function Founder() {
                   Major Virat Mishra
                 </h3>
                 <p className="text-[var(--primary)] font-semibold mt-2 text-sm sm:text-base">
-                  Founder &amp; National President, Rashtrama (RSM)
+                  Founder &amp; National President, RSM (राष्ट्रमा)
                 </p>
 
                 <ol className="mt-6 sm:mt-8 space-y-3 text-left">

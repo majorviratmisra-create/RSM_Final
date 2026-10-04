@@ -3,7 +3,6 @@
 const youthProblems = [
   {
     title: "Unemployment",
-    description: "Tied to skill gaps that keep young Indians from real opportunity.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -12,7 +11,6 @@ const youthProblems = [
   },
   {
     title: "Lack of leadership opportunities",
-    description: "Young people rarely get the chance to develop and exercise leadership.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -21,7 +19,6 @@ const youthProblems = [
   },
   {
     title: "Political exclusion",
-    description: "Youth are shut out of meaningful political participation.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
@@ -30,7 +27,6 @@ const youthProblems = [
   },
   {
     title: "Exam paper leaks",
-    description: "Examination integrity is a crisis affecting young Indians.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
@@ -39,7 +35,6 @@ const youthProblems = [
   },
   {
     title: "Old, power-hungry politicians",
-    description: "Leadership that hoards power instead of making room for the next generation.",
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,7 +58,7 @@ export default function About() {
               <span className="text-[var(--primary)] block sm:inline">Instead, a movement of service.</span>
             </h2>
             <p className="mt-5 sm:mt-6 text-base sm:text-lg text-[var(--text-muted)] leading-relaxed max-w-3xl mx-auto">
-              Rashtrama is a nation-building{" "}
+              RSM (राष्ट्रमा) is a nation-building{" "}
               <strong className="text-[var(--foreground)]">social &amp; political</strong> service platform.
             </p>
           </div>
@@ -91,14 +86,11 @@ export default function About() {
                   {problem.icon}
                 </div>
                 <h3
-                  className="text-lg font-bold text-[var(--foreground)] mb-2"
+                  className="text-lg font-bold text-[var(--foreground)]"
                   style={{ fontFamily: "var(--font-heading)" }}
                 >
                   {problem.title}
                 </h3>
-                <p className="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
-                  {problem.description}
-                </p>
               </div>
             ))}
           </div>
@@ -106,7 +98,7 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="bg-gradient-to-r from-[var(--primary)] to-[var(--primary-dark)] rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-xl shining-banner">
               <p className="shining-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug">
-                Hence, the Indian youth must come forward
+                Hence, the Indian youth must come forward and lead
               </p>
             </div>
           </div>

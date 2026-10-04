@@ -57,7 +57,7 @@ export default function Hero() {
             <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed">
               Inspired by the Great{" "}
               <strong className="text-[var(--foreground)]">Netaji Subhas Chandra Bose</strong>,{" "}
-              Rashtrama (RSM) is building a political movement of young leaders,
+              RSM (राष्ट्रमा) is building a political movement of young leaders,
               entrepreneurs, innovators, soldiers, professionals, college and school
               students, and young boys and girls from rural and urban areas who are
               committed to building a <strong className="text-[var(--foreground)]">Strong Bharat</strong>.

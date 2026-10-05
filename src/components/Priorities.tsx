@@ -84,7 +84,7 @@ export default function Priorities() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
             <h2 className="text-[var(--primary)] font-semibold uppercase tracking-wider text-xs sm:text-sm">
-              Priorities
+              RSM Priorities
             </h2>
           </div>
 

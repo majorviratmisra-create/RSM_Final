@@ -29,7 +29,7 @@ export default function Founder() {
                 <div className="relative w-full max-w-md mx-auto md:mx-0 md:w-80 aspect-[3/2] overflow-hidden rounded-xl shadow-lg border border-[var(--border-light)]">
                   <Image
                     src="/founder-major-virat-mishra.png"
-                    alt="Major Virat Mishra speaking at Ideas Matter Most Talks"
+                    alt="Major Virat Misra speaking at Ideas Matter Most Talks"
                     fill
                     sizes="(max-width: 767px) calc(100vw - 4rem), 320px"
                     className="object-contain"
@@ -43,7 +43,7 @@ export default function Founder() {
                   className="text-2xl sm:text-3xl font-bold text-[var(--foreground)]"
                   style={{ fontFamily: "var(--font-heading)" }}
                 >
-                  Major Virat Mishra
+                  Major Virat Misra
                 </h3>
                 <p className="text-[var(--primary)] font-semibold mt-2 text-sm sm:text-base">
                   Founder &amp; National President, RSM (राष्ट्रमा)

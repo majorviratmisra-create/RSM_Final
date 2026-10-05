@@ -84,7 +84,7 @@ export default function Hero() {
               <span className="text-[var(--primary)]">Real Action.</span>
             </p>
             <p className="text-base sm:text-lg text-[var(--text-muted)] mt-2">
-              That&apos;s what Rashtrama (RSM) is all about.
+              That&apos;s what RSM (राष्ट्रमा) is all about.
             </p>
           </div>
 
